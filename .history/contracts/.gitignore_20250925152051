@@ -1,0 +1,24 @@
+# 1. ابدأي git في مجلد المشروع
+git init
+
+# 2. ضيفي ملف .gitignore (لو ما ضفتيه من قبل) 
+echo ".env
+node_modules/
+artifacts/
+cache/" >> .gitignore
+
+# 3. أضيفي كل الملفات (مع مراعاة .gitignore)
+git add .
+
+git commit -m "Initial commit - HelloWorld Smart Contract"
+
+git branch -M main
+
+git remote add origin https://github.com/YourUsername/hello-world-smart-contract.git
+
+
+git push -u origin main
+
+
+
+
